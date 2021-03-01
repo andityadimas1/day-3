@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main()  {
-	
+	var keyword int
+	var history []float64
 	// defer func ()  {
 	// 	if r :=recover();r!=nil{
 	// 		fmt.Println("ran into error")
@@ -31,12 +32,12 @@ func main()  {
 		}
 		fmt.Println("Silahkan masukkan angka:")
 		fmt.Scan(&number)
-		// fmt.Println("Hasilnya:")
-		// fmt.Println(currentNumber)
+		fmt.Println("Hasilnya:")
+		fmt.Println(currentNumber)
 		currentNumber = functions[functionName](currentNumber, number)
 	}	
-	fmt.Println("Hasilnya:")
-		 fmt.Println(currentNumber)
+		// fmt.Println("Hasilnya:")
+		// fmt.Println(currentNumber)
 }
 func tambah(x,y int) int {
 	return x + y
